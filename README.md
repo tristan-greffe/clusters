@@ -10,7 +10,6 @@ Before you continue, ensure that the following prerequisites are installed on yo
 * [helm](https://helm.sh/docs/intro/install/) we currently require the `3.11` version since it supports the range of k8s version we manage. See [here](https://helm.sh/docs/topics/version_skew/#supported-version-skew)
 * [helm-diff plugin](https://github.com/databus23/helm-diff) to be able to diff new configuration with what's currently deployed remotely.
 * [helm-secrets plugin](https://github.com/jkroepke/helm-secrets) to be able to store encrypted secrets in the repo and decrypt them before deployment.
-* [helmfile](https://helm.sh/docs/intro/install/) we currently require the `0.153.0` version.
 * [age](https://age-encryption.org/) this is the 'low-level' encryption tool used to encrypt/decrypt secrets.
 * [sops](https://github.com/getsops/sops#encrypting-using-age) this wraps around `age` to encrypt/decrypt yaml values.
 
