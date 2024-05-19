@@ -1,0 +1,12 @@
+# Visual code
+.vscode
+
+# Logs
+logs
+*.log
+
+# age keys
+keys.txt
+
+# Decrypted files
+*.dec.*

@@ -1,0 +1,16 @@
+# This file is only used to _encrypt_ secrets. It defines who will be able to decrypt the secrets.
+# Each recipîent is the public key of an allowed developer.
+# For reference:
+#   - tristan:    age1hhe2lx8e0ey5jqkx7lx4tz9h7r0mgdeyeuy8pxmexfgvu8c423vqf595pl
+creation_rules:
+  # recipients for prod
+  - path_regex: namespaces/prod/.*$
+    age: >
+      age1hhe2lx8e0ey5jqkx7lx4tz9h7r0mgdeyeuy8pxmexfgvu8c423vqf595pl
+  - path_regex: clusters/prod/.*$
+    age: >
+      age1hhe2lx8e0ey5jqkx7lx4tz9h7r0mgdeyeuy8pxmexfgvu8c423vqf595pl
+  # recipients for everything else
+  - age: >
+      age1hhe2lx8e0ey5jqkx7lx4tz9h7r0mgdeyeuy8pxmexfgvu8c423vqf595pl
+
