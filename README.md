@@ -1,91 +1,58 @@
-This repository contains the configuration for the `dev`, `test` &`prod` namespaces. It also contains configuration for the supporting clusters (`staging` and `prod`).
-
-  * `dev` and `test` namespaces are deployed on the `staging` cluster.
-  * `prod` namespaces is deployed on the `prod` cluster.
-
-# Prerequisites
-
-Before you continue, ensure that the following prerequisites are installed on your system:
-
-* [helm](https://helm.sh/docs/intro/install/) we currently require the `3.11` version since it supports the range of k8s version we manage. See [here](https://helm.sh/docs/topics/version_skew/#supported-version-skew)
-* [helm-diff plugin](https://github.com/databus23/helm-diff) to be able to diff new configuration with what's currently deployed remotely.
-* [helm-secrets plugin](https://github.com/jkroepke/helm-secrets) to be able to store encrypted secrets in the repo and decrypt them before deployment.
-* [age](https://age-encryption.org/) this is the 'low-level' encryption tool used to encrypt/decrypt secrets.
-* [sops](https://github.com/getsops/sops#encrypting-using-age) this wraps around `age` to encrypt/decrypt yaml values.
-
-## First-Time Setup
-
-1. clone this project
-
-```
-git clone https://github.com/tristan-greffe/clusters.git
-```
-
-2. create an [age](https://age-encryption.org/) keypair for yourself. The private key will be used to decrypt secrets in our projects.
-
-To encrypt/decrypt secrets stored in this repo, you must be added to the list of recipients of the secret files. Start by generating a public/private key pair for yourself:
-
-``` sh
-age-keygen -o "clusters/age/keys.txt"
-```
-
-The command will print the public key in the terminal; communicate this key to an already authorized developer. This key pair functions like an ID card for yourself. Using the public part, we can encrypt files ensuring you can decrypt them. The private part is used only for decryption and should never be shared. It is stored in the clusters/age/keys.txt file.
-
-> [!WARNING]  
-> Register this age keypair in your password manager; it is essential to keep it safe.
 
 
-# Operations
+<div align="center">
 
-## Scripts
+  ![Project Banner](./docs/.vitepress/public/readme_assets/readme_banner.png)
 
-First, grant the necessary permissions to execute the scripts:
+  <p>Automation scripts, Helm charts & configurations for deploying and managing Kubernetes clusters efficiently.</p>
 
-``` sh
-chmod +x ./scripts/*.sh
-```
+  <p>
+    <a href="https://github.com/tristan-greffe/clusters">
+      <img src="https://awesome.re/badge.svg" alt="awesome" />
+    </a>
+    <a href="https://tristan-greffe.github.io/clusters/">
+      <img src="https://img.shields.io/badge/documentation-available-brightgreen.svg" alt="documentation" />
+    </a>
+    <a href="https://github.com/tristan-greffe/clusters/stargazers">
+      <img src="https://img.shields.io/github/stars/tristan-greffe/clusters" alt="stars" />
+    </a>
+    <a href="https://github.com/tristan-greffe/clusters/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/tristan-greffe/clusters.svg" alt="license" />
+    </a>
+  </p>
 
-### Encrypt / Decrypt
+ <h4>
+    <a href="https://tristan-greffe.github.io/clusters/">View Documentation</a>
+    <span> · </span>
+    <a href="https://github.com/tristan-greffe/clusters/issues/">Report Bug</a>
+    <span> · </span>
+    <a href="https://github.com/tristan-greffe/clusters/issues/">Request Feature</a>
+  </h4>
 
-#### Description
+  <a href="https://tristan-greffe.github.io/clusters/">
+    <img src="https://skillicons.dev/icons?i=docker,jenkins,kubernetes,prometheus,grafana" />
+  </a>
+</div>
 
-Wrappers around sops to encrypt/decrypt files. These scripts take only one parameter: the file to encrypt for `./scripts/encrypt.sh` and the file to decrypt for `./scripts/decrypt.sh`. The wrappers will create an encrypted/decrypted file named as the source file with `.enc` (or `.dec`) inserted between the filename and the extension. No assumptions are made about the input file name conventions.
+## Contributing
 
-#### Usage
+Contributions are always welcome!
 
-To encrypt:
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-``` sh
-./scripts/encrypt.sh path/to/file.yaml
-```
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-Will encrypt `path/to/file.yaml` to `path/to/file.enc.yaml`
+1. Fork it! 🤙
 
-To decrypt:
+2. Create your feature branch: `git checkout -b my-new-feature`
 
-``` sh
-./scripts/decrypt.sh path/to/file.enc.conf
-```
+3. Commit your changes: `git commit -m "Add some feature"`
 
-Will decrypt `path/to/file.enc.conf` to `path/to/file.dec.conf`
+4. Push to the branch: `git push origin my-new-feature`
 
-### Update Secrets
+5. Submit a pull request 👍
 
-#### Description
+## License
 
-This helper command updates the secret files (all matching `*.enc.*`) to reflect changes in the list of recipients in a project's `.sops.yaml` file (i.e., the list of allowed public keys).
-
-#### Usage
-
-``` bash
-./scripts/update-secrets.sh
-```
-
-This will update all secret files in the `clusters` project.
-
-> [!WARNING]
-> Do not use this command to update secrets after editing a secret file, as you will lose your modifications. Instead, use `./scripts/decrypt.sh` to encrypt the updated decrypted file.
-
-## Adding a New Developer
-
-To grant a new developer access, add their public key to the `.sops.yaml` file. This file lists path regexes indicating for each path the recipients (allowed developers) to use when encrypting a file located in the matching path.
+This project is licensed under the MIT License - see the [license file](./LICENSE) for details
