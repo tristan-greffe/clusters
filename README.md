@@ -10,7 +10,7 @@
     <a href="https://github.com/tristan-greffe/clusters">
       <img src="https://awesome.re/badge.svg" alt="awesome" />
     </a>
-    <a href="https://clusters.tristan-greffe.xyz/">
+    <a href="https://tristan-greffe.github.io/clusters/">
       <img src="https://img.shields.io/badge/documentation-available-brightgreen.svg" alt="documentation" />
     </a>
     <a href="https://github.com/tristan-greffe/clusters/stargazers">
@@ -22,7 +22,7 @@
   </p>
 
  <h4>
-    <a href="https://clusters.tristan-greffe.xyz/">View Documentation</a>
+    <a href="https://tristan-greffe.github.io/clusters/">View Documentation</a>
     <span> · </span>
     <a href="https://github.com/tristan-greffe/clusters/issues/">Report Bug</a>
     <span> · </span>
@@ -30,7 +30,7 @@
   </h4>
 
   <a href="https://tristan-greffe.github.io/clusters/">
-    <img src="https://skillicons.dev/icons?i=docker,jenkins,kubernetes,prometheus,grafana" />
+    <img src="https://skillicons.dev/icons?i=docker,kubernetes,prometheus,grafana,jenkins" />
   </a>
 </div>
 
