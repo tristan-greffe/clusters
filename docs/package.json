@@ -1,0 +1,30 @@
+{
+  "name": "clusters-documentation",
+  "description": "Clusters Documentation",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tristan-greffe/clusters",
+  "license": "MIT",
+  "keywords": [
+    "documentation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tristan-greffe/clusters.git"
+  },
+  "author": {
+    "name": "Tristan Greffe contributors",
+    "url": "https://github.com/tristan-greffe"
+  },
+  "bugs": {
+    "url": "https://github.com/tristan-greffe/clusters/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.2.0"
+  }
+}

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![Project Banner](./docs/.vitepress/public/readme_assets/readme_banner.png)
+  ![Project Banner](./docs/public/readme_banner.png)
 
   <p>Automation scripts, Helm charts & configurations for deploying and managing Kubernetes clusters efficiently.</p>
 
@@ -10,7 +10,7 @@
     <a href="https://github.com/tristan-greffe/clusters">
       <img src="https://awesome.re/badge.svg" alt="awesome" />
     </a>
-    <a href="https://tristan-greffe.github.io/clusters/">
+    <a href="https://clusters.tristan-greffe.xyz/">
       <img src="https://img.shields.io/badge/documentation-available-brightgreen.svg" alt="documentation" />
     </a>
     <a href="https://github.com/tristan-greffe/clusters/stargazers">
@@ -22,7 +22,7 @@
   </p>
 
  <h4>
-    <a href="https://tristan-greffe.github.io/clusters/">View Documentation</a>
+    <a href="https://clusters.tristan-greffe.xyz/">View Documentation</a>
     <span> · </span>
     <a href="https://github.com/tristan-greffe/clusters/issues/">Report Bug</a>
     <span> · </span>
