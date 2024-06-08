@@ -13,11 +13,12 @@ jobs:
       pages: write
     steps:
       - uses: actions/checkout@v4
-      - uses:  actions/setup-node@v3
+      - uses: pnpm/action-setup@v3
         with:
-          node-version: '20.x'
+          version: 9
       - name: Build docs
-        run: cd docs && pnpm install && pnpm docs:build
+        run: |
+          cd docs && pnpm install && pnpm docs:build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
