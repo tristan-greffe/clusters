@@ -9,5 +9,5 @@ hero:
   actions:
     - theme: brand
       text: Ready to start ?
-      link: /quickstart/introduction
+      link: /about/introduction
 ---
