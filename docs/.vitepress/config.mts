@@ -6,7 +6,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css', rel: 'stylesheet' }],
-    ['link', { rel: 'icon', href: './public/clusters.png' }]
+    ['link', { rel: 'icon', href: '/clusters.png' }]
   ],
   locales: {
     root: {
