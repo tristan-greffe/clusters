@@ -98,46 +98,64 @@ function getLearningSidebar (lang = 'en') {
   if (lang === 'en') {
     return [
       { text: 'Introduction', link: '/learning/introduction' },
+      { text: 'Docker',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/learning/docker/introduction' },
+          { text: 'Container & Image', link: '/learning/docker/container-image' },
+          { text: 'Create image', link: '/learning/docker/create-image' },
+          { text: 'Docker Compose', link: '/learning/docker/docker-compose' }
+        ]
+      },
       { text: 'Network protocols',
         collapsed: true,
         items: [
-          { text: 'Internet network', link: '/fr/learning/network-protocols/introduction' }
+          { text: 'Internet network', link: '/learning/network-protocols/introduction' }
         ]
       },
       { text: 'Kubernetes',
         collapsed: true,
         items: [
-          { text: '??', link: '/fr/learning/kubernetes/introduction' }
+          { text: '??', link: '/learning/kubernetes/introduction' }
         ]
       },
       { text: 'Prometheus',
         collapsed: true,
         items: [
-          { text: '??', link: '/fr/learning/prometheus/introduction' }
+          { text: '??', link: '/learning/prometheus/introduction' }
         ]
       },
       { text: 'Grafana',
         collapsed: true,
         items: [
-          { text: '??', link: '/fr/learning/grafana/introduction' }
+          { text: '??', link: '/learning/grafana/introduction' }
         ]
       },
       { text: 'Jenkins',
         collapsed: true,
         items: [
-          { text: '??', link: '/fr/learning/jenkins/introduction' }
+          { text: '??', link: '/learning/jenkins/introduction' }
         ]
       },
       { text: 'Ansible',
         collapsed: true,
         items: [
-          { text: '??', link: '/fr/learning/ansible/introduction' }
+          { text: '??', link: '/learning/ansible/introduction' }
         ]
       }
     ]
   }
   return [
     { text: 'Introduction', link: '/fr/learning/introduction' },
+    { text: 'Docker',
+      collapsed: true,
+      items: [
+        { text: 'Introduction', link: '/fr/learning/docker/introduction' },
+        { text: 'Conteneurs & Images', link: '/fr/learning/docker/container-image' },
+        { text: 'Créer une image', link: '/fr/learning/docker/create-image' },
+        { text: 'Docker Compose', link: '/fr/learning/docker/docker-compose' }
+      ]
+    },
     { text: 'Protocoles réseaux',
       collapsed: true,
       items: [
