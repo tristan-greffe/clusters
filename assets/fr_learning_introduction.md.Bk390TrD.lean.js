@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as n}from"./chunks/framework.BL94qm72.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"fr/learning/introduction.md","filePath":"fr/learning/introduction.md"}'),r={name:"fr/learning/introduction.md"};function o(a,i,c,s,d,f){return n(),e("div")}const l=t(r,[["render",o]]);export{_ as __pageData,l as default};
