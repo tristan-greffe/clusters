@@ -31,12 +31,13 @@ docker image ls
 
 ```bash
 docker image rm <IMAGE ID>
+docker rmi <IMAGE ID>
 ```
 
 ## Docker container management
 
 ### Run a container
-
+s
 ```bash
 docker container run ubuntu:latest
 ```
@@ -110,6 +111,9 @@ docker container run -it --name my_ubuntu --mount type=volume,src=my_volume,dst=
 | `docker volume create --name <VOLUME>` | Create a volume                        |
 | `docker volume ls`                     | List volumes                           |
 | `docker volume inspect <VOLUME>`       | Inspect a volume                       |
+| `docker volume rm <VOLUME>`            | Delete a volume                        |
+| `docker volume ls -f dangling=true`    | List all dangling volumes              |
+| `docker volume prune`                  | Delete all dangling volumes            |
 
 ## Docker system cleanup
 

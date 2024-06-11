@@ -31,6 +31,7 @@ docker image ls
 
 ```bash
 docker image rm <IMAGE ID>
+docker rmi <IMAGE ID>
 ```
 
 ## Gestion des conteneurs Docker
@@ -110,6 +111,9 @@ docker container run -it --name my_ubuntu --mount type=volume,src=my_volume,dst=
 | `docker volume create --name <VOLUME>`  | Créer un volume                        |
 | `docker volume ls`                      | Lister les volumes                     |
 | `docker volume inspect <VOLUME>`        | Inspecter un volume                    |
+| `docker volume rm <VOLUME>`             | Supprimer un volume                    |
+| `docker volume ls -f dangling=true`     | Lister tous les volumes en suspens     |
+| `docker volume prune`                   | Supprimer tous les volumes en suspens  |
 
 ## Nettoyage système docker
 
