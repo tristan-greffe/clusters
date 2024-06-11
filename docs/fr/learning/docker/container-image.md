@@ -1,5 +1,8 @@
 # Manipulation de Conteneurs et d'Images
 
+* **Image :** Décrit les éléments nécessaires pour créer un programme conteneurisé (≈ programme)
+* **Conteneur :** Créé à partir des images, il exécute le programme (≈ processus)
+
 ## Démarrer Docker
 
 ```bash

@@ -1,5 +1,8 @@
 # Container and Image Management
 
+* **Image :** Describes the elements required to create a containerized program (≈ program)
+* **Container :** Created from the images, it executes the program (≈ process)
+
 ## Start Docker
 
 ```bash
