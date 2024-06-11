@@ -1,6 +1,16 @@
+/* Brand color definition */
 :root {
   --vp-c-brand-1: #0086c1;
   --vp-c-brand-2: #1c4c8e;
   --vp-c-brand-3: #0086c1;
 }
 
+/* Hide images intended for light mode in dark mode */
+:root.dark [src$="#light-mode-only"] {
+  display: none;
+}
+
+/* Hide images intended for dark mode in light mode */
+:root:not(.dark) [src$="#dark-mode-only"] {
+  display: none;
+}
