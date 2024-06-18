@@ -5,12 +5,9 @@
   --vp-c-brand-3: #0086c1;
 }
 
-/* Hide images intended for light mode in dark mode */
-:root.dark [src$="#light-mode-only"] {
-  display: none;
-}
-
-/* Hide images intended for dark mode in light mode */
-:root:not(.dark) [src$="#dark-mode-only"] {
-  display: none;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
