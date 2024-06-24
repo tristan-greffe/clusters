@@ -14,7 +14,7 @@
 6. **Infrastructure as Code (IaC)**: Manage configurations and infrastructure using scripts and code definitions, ensuring reproducibility and version control.
 7. **Continuous Improvement**: Engage in a perpetual cycle of evaluating and improving processes and tools.
 
-## DevOps Cycle
+## Cycle
 
 ![stack-devops](/learning/stack-devops/stack-devops.svg)
 
@@ -34,7 +34,7 @@ If using `GitHub Actions` or `GitLab CI`, the **build and test servers is manage
 Typically, before deploying to production servers, **end-to-end tests are conducted on a specific cluster**
 :::
 
-## DevOps Tools
+## Tools
 
 | Category             | Tools                              | Description |
 |----------------------|------------------------------------|-------------|

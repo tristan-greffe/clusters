@@ -4,7 +4,7 @@ Le `DevOps`, ou développement opérationnel, est un ensemble de pratiques visan
 
 ![devops](/learning/stack-devops/cycle-devops.png)
 
-## Les Principes Clés
+## Principes clés
 
 1. **Collaboration et communication** : Favoriser une culture de collaboration entre les équipes de développement et d'exploitation.
 2. **Automatisation** : Automatiser autant que possible les processus de développement, de test, de déploiement et de gestion des infrastructures.
@@ -14,7 +14,7 @@ Le `DevOps`, ou développement opérationnel, est un ensemble de pratiques visan
 6. **Infrastructure as Code (IaC)** : Gérer les configurations et l'infrastructure à l'aide de scripts et de définitions de code, facilitant ainsi la reproductibilité et la gestion des versions.
 7. **Amélioration continue** : S'engager dans un cycle perpétuel d'évaluation et d'amélioration des processus et des outils.
 
-## Cycle DevOps
+## Cycle
 
 ![stack-devops](/learning/stack-devops/stack-devops.svg)
 
@@ -34,7 +34,7 @@ Si `GitHub Actions` ou `GitLab CI` sont utilisés, **les serveurs de build et de
 Généralement, avant de déployer sur les serveurs de production, des **tests e2e sont effectués sur un cluster spécifique**
 :::
 
-## Outils DevOps
+## Outils
 
 | Catégorie             | Outils                            | Description |
 |-----------------------|-----------------------------------|-------------|
