@@ -1,8 +1,8 @@
 # La Stack DevOps
 
-Le DevOps, ou développement opérationnel, est un ensemble de pratiques visant à réduire le fossé entre le développement logiciel (Dev) et les opérations informatiques (Ops) pour améliorer la collaboration entre les équipes, automatiser les processus, et livrer des logiciels de haute qualité de manière continue et rapide.
+Le `DevOps`, ou développement opérationnel, est un ensemble de pratiques visant à réduire le fossé entre le développement logiciel (Dev) et les opérations informatiques (Ops) pour améliorer **la collaboration entre les équipes, automatiser les processus, et livrer des logiciels de haute qualité de manière continue et rapide**.
 
-![devops](/learning/stack-devops/devops.png)
+![devops](/learning/stack-devops/cycle-devops.png)
 
 ## Les Principes Clés
 
@@ -27,11 +27,11 @@ Le DevOps, ou développement opérationnel, est un ensemble de pratiques visant 
 7. **Déploiement**: Kubernetes récupère la nouvelle image et déploie les nouveaux conteneurs pour l'application
 
 :::info
-Si `GitHub Actions` ou `GitLab CI` sont utilisés, le serveur de build et de test est géré par leur solution cloud, souvent regroupés sur le même serveur.
+Si `GitHub Actions` ou `GitLab CI` sont utilisés, **les serveurs de build et de test est géré par leur solution cloud**, souvent regroupés sur le même serveur.
 :::
 
 :::info
-Généralement, avant de déployer sur les serveurs de production, des tests e2e sont effectués sur un cluster spécifique
+Généralement, avant de déployer sur les serveurs de production, des **tests e2e sont effectués sur un cluster spécifique**
 :::
 
 ## Outils DevOps

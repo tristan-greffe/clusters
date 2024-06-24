@@ -1,8 +1,8 @@
 # The DevOps Stack
 
-DevOps, short for Development and Operations, is a set of practices aimed at reducing the gap between software development (Dev) and IT operations (Ops) to improve collaboration, automate processes, and deliver high-quality software continuously and rapidly.
+`DevOps`, short for Development and Operations, is a set of practices aimed at reducing the gap between software development (Dev) and IT operations (Ops) to improve **collaboration, automate processes, and deliver high-quality software continuously and rapidly**.
 
-![devops](/learning/stack-devops/devops.png)
+![devops](/learning/stack-devops/cycle-devops.png)
 
 ## Key Principles
 
@@ -27,11 +27,11 @@ DevOps, short for Development and Operations, is a set of practices aimed at red
 7. **Deployment**: Kubernetes retrieves the new image and deploys new containers for the application.
 
 :::info
-If using `GitHub Actions` or `GitLab CI`, the build and test server is managed by their cloud solution, often combined on the same server.
+If using `GitHub Actions` or `GitLab CI`, the **build and test servers is managed by their cloud solution**, often combined on the same server.
 :::
 
 :::info
-Typically, before deploying to production servers, end-to-end tests are conducted on a specific cluster.
+Typically, before deploying to production servers, **end-to-end tests are conducted on a specific cluster**
 :::
 
 ## DevOps Tools
