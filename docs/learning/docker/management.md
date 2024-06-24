@@ -1,15 +1,13 @@
-# Container and Image Management
+# Managing Docker
 
+![docker-management](/learning/docker/docker-management.jpg)
+
+::: info
 * **Image :** Describes the elements required to create a containerized program (≈ program)
 * **Container :** Created from the images, it executes the program (≈ process)
+:::
 
-## Start Docker
-
-```bash
-sudo service docker start
-```
-
-## Docker image management
+## Image
 
 ### Download an image
 
@@ -23,13 +21,6 @@ docker image pull ubuntu:latest
 docker image ls
 ```
 
-- **Displayed Information**:
-  - `REPOSITORY`: Image name
-  - `TAG`: Label for version differentiation
-  - `IMAGE ID`: Unique identifier
-  - `CREATED`: Creation date
-  - `SIZE`: Size
-
 ### Remove an image
 
 ```bash
@@ -37,10 +28,10 @@ docker image rm <IMAGE ID>
 docker rmi <IMAGE ID>
 ```
 
-## Docker container management
+## Container
 
 ### Run a container
-s
+
 ```bash
 docker container run ubuntu:latest
 ```
@@ -57,26 +48,17 @@ docker container run ubuntu:latest
 | `docker container ls`            | List running containers                  |
 | `docker container ls --all`      | List all containers                      |
 
-- **Displayed Information**:
-  - `CONTAINER ID`: Unique identifier
-  - `IMAGE`: Name of the image used
-  - `COMMAND`: Executed command
-  - `CREATED`: Launch date
-  - `STATUS`: Container status
-  - `PORTS`: Network tunnels
-  - `NAMES`: Container name
-
 ### Run a container
 
-| Argument              | Usage                                                             |
-|-----------------------|-------------------------------------------------------------------|
-| -it or --interactive  | Interaction with the container                                    |
-| -d or --detach        | Run in the background                                             |
-| -n or --name          | Name the container                                                |
-| --rm                  | Remove the container after stopping                               |
-| -e                    | Set an environment variable                                       |
-| -p                    | Port mapping                                                      |
-| --mount               | Mount a volume to a container (type=volume,src=src_volume,dst=/path_in_container) |
+| Argument | Usage |
+|----------|-------|
+| `-it` or `--interactive`  | Interaction with the container |
+| `-d `or `--detach`        | Run in the background |
+| `-n` or `--name`          | Name the container |
+| `--rm`                    | Remove the container after stopping |
+| `-e`                      | Set an environment variable |
+| `-p`                      | Port mapping |
+| `--mount` | Mount a volume to a container (type=volume,src=src_volume,dst=/path_in_container) |
 
 ```bash
 docker container run -it --rm --name my_ubuntu -e "my_variable=hello_world" ubuntu:latest bash
@@ -88,7 +70,7 @@ docker container run -d --rm -p 9201:9200 -p 9301:9300 ubuntu:latest
 docker container run -it --name my_ubuntu --mount type=volume,src=my_volume,dst=/home/my_folder --rm ubuntu:latest bash
 ```
 
-### Container management
+### Essential commands
 
 | Command                                | Description                                  |
 |----------------------------------------|----------------------------------------------|
@@ -97,15 +79,10 @@ docker container run -it --name my_ubuntu --mount type=volume,src=my_volume,dst=
 | `docker container stop <ID or NAME>`   | Stop a container                             |
 | `docker container rm <ID or NAME>`     | Remove a container                           |
 | `docker container prune`               | Remove all stopped containers                |
-
-### Visualization & access
-
-| Command                                            | Description                                            |
-|----------------------------------------------------|--------------------------------------------------------|
-| `docker container logs <ID or NAME> (-f --tail)`   | View logs of a container                               |
-| `docker container exec -it <ID or NAME> bash`      | Access the shell of a running container                |
-| `docker container inspect <ID or NAME>`            | Inspect container details                              |
-| `docker container inspect <ID or NAME> \| grep IPAddress` | Find the container's IP address                         |
+| `docker container logs <ID or NAME> (-f --tail)` | View logs of a container |
+| `docker container exec -it <ID or NAME> bash` | Access the shell of a running container |
+| `docker container inspect <ID or NAME>` | Inspect container details |
+| `docker container inspect <ID or NAME> \| grep IPAddress` | Find the container's IP address |
 
 ## Data persistence
 
@@ -118,10 +95,10 @@ docker container run -it --name my_ubuntu --mount type=volume,src=my_volume,dst=
 | `docker volume ls -f dangling=true`    | List all dangling volumes              |
 | `docker volume prune`                  | Delete all dangling volumes            |
 
-## Docker system cleanup
+## System cleanup
 
-| Command                            | Description                                                     |
-|------------------------------------|-----------------------------------------------------------------|
-| `docker system prune`              | Clean up Docker (stopped containers, networks, unreferenced images, and build caches) |
-| `docker system prune -f`           | Force cleanup without confirmation                              |
-| `docker system prune --volumes`    | Include volumes in the cleanup                                  |
+| Command | Description |
+|---------|-------------|
+| `docker system prune` | Clean up Docker (stopped containers, networks, unreferenced images, and build caches) |
+| `docker system prune -f` | Force cleanup without confirmation |
+| `docker system prune --volumes` | Include volumes in the cleanup |

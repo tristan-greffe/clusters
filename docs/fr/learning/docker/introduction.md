@@ -1,12 +1,12 @@
 # Introduction à Docker
 
-Docker est un outil basé sur [containerd](https://containerd.io/) qui facilite la création et la gestion des conteneurs. Créé par [dotCloud](https://dotcloud.co.za/), il est géré par l'Open Container Initiative de la Linux Foundation.
+`Docker` est un outil basé sur [containerd](https://containerd.io/) qui facilite la création et la gestion des conteneurs. Créé par [dotCloud](https://dotcloud.co.za/), il est géré par l'[Open Container Initiative](https://opencontainers.org/) de la [Linux Foundation](https://www.linuxfoundation.org/).
 
-## Fonctionnement de Docker
+## Fonctionnement
 
-Docker utilise une architecture client-serveur :
+Docker utilise une **architecture client-serveur** :
 
-![Docker Operation](/docker-operation.png)
+![docker-engine](/learning/docker/docker-engine.avif)
 
 | Composant | Description |
 |-----------|-------------|
