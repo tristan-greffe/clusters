@@ -1,3 +1,3 @@
 # Learning
 
-Content available in [French](../fr/learning/devops.md) only.
+Content available in [French](../fr/learning/introduction.md) only.
