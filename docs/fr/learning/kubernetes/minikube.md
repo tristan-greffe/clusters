@@ -47,10 +47,16 @@ Le **Metrics Server** est un add-on qui collecte des métriques de ressources da
 minikube addons enable metrics-server
 ```
 
+## Ingress
+
+```sh
+minikube addons enable ingress
+minikube addons enable ingress-dns
+```
+
 ## Alternatives
 
 | Alternative                              | Description                                      |
 |------------------------------------------|--------------------------------------------------|
-| [Kind](https://kind.sigs.k8s.io/)        | Kubernetes IN Docker, idéal pour les tests CI.   |
 | [K3s](https://k3s.io/)                   | Distribution légère de Kubernetes.               |
 | [MicroK8s](https://microk8s.io/)         | Distribution légère et rapide de Kubernetes par Canonical.|
