@@ -2,7 +2,7 @@
 
 L'[Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) ajuste automatiquement le nombre de Pods dans un contrôleur de réplication, un déploiement, un ReplicaSet ou un StatefulSet en fonction de l'utilisation des ressources (`cpu`, `memory` ou métriques personnalisées). Cela permet de réaliser une mise à l'échelle horizontale en **ajoutant ou supprimant des instances de Pods** pour répondre à la demande.
 
-<img src="/clusters/learning/kubernetes/hpa.svg" alt="hpa" style="width: 60%; display: block; margin: 0 auto;">
+<img src="/learning/kubernetes/hpa.svg" alt="hpa" style="width: 60%; display: block; margin: 0 auto;">
 
 :::warning
 HPA ne fonctionne pas avec les `DaemonSets`.
