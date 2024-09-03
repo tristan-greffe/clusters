@@ -2,7 +2,7 @@
 
 Le Kubernetes [Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) ajuste automatiquement les ressources (CPU et mémoire) allouées aux containers en fonction de leur utilisation. En analysant les données historiques, il **augmente ou diminue les demandes de ressources et les limites** pour optimiser la performance des applications.
 
-<img src="/clusters/learning/kubernetes/vpa.svg" alt="vpa" style="width: 60%; display: block; margin: 0 auto;">
+<img src="/learning/kubernetes/vpa.svg" alt="vpa" style="width: 60%; display: block; margin: 0 auto;">
 
 ::: danger ⚠️ Ne pas utiliser VPA avec HPA
 N'utilisez pas le VPA avec le HPA qui évolue en fonction des mêmes métriques de ressources, car ils peuvent entrer en conflit en se basant sur les mêmes métriques (CPU, mémoire), entraînant des effets secondaires indésirables.
