@@ -56,7 +56,7 @@ resources:
 
 Les health checks (ou probes) permettent de **vérifier l'état des containers dans un pod**. Kubernetes propose trois types de probes : `Startup Probe`, `Liveness Probe` & `Readiness Probe`. Ces probes sont des **actions de diagnostic** effectuées par le `kubelet` pour s'assurer du bon fonctionnement des Pods.
 
-<img src="/clusters/learning/kubernetes/probes.svg" alt="probes" style="width: 100%; display: block; margin: 0 auto;">
+<img src="/learning/kubernetes/probes.svg" alt="probes" style="width: 100%; display: block; margin: 0 auto;">
 
 1. `Startup Probe` se lance en premier
 2. Une fois la `Startup Probe` réussie, les `Liveness Probes` & `Readiness Probes` se lancent
