@@ -4,7 +4,7 @@ Un [volume](https://kubernetes.io/docs/concepts/storage/volumes/) dans Kubernete
 
 Il existe deux **types de volumes** :
 
-<img src="/clusters/learning/kubernetes/volume.svg" alt="volume" style="width: 60%; display: block; margin: 0 auto;">
+<img src="/learning/kubernetes/volume.svg" alt="volume" style="width: 60%; display: block; margin: 0 auto;">
 
 | Type de Volume | Description | Exemple |
 |----------------|-------------|---------|
