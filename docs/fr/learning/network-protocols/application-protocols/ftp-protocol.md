@@ -10,7 +10,7 @@ Il est l'un des protocoles les plus anciens et les plus utilisés pour la gestio
 
 FTP fonctionne selon un modèle client-serveur, où le **client `FTP` se connecte à un serveur `FTP` pour télécharger ou téléverser des fichiers**. `FTP` utilise deux canaux de communication distincts : un canal de commande et un canal de données.
 
-<img src="/clusters/learning/network-protocols/ftp-protocol.png" alt="ftp-protocol" style="width: 80%; display: block; margin: 0 auto;">
+<img src="/learning/network-protocols/ftp-protocol.png" alt="ftp-protocol" style="width: 80%; display: block; margin: 0 auto;">
 
 1. **Canal de Commande** : Utilisé pour envoyer des commandes et recevoir des réponses entre le client et le serveur (Par défaut, il utilise le port TCP 21)
 2. **Canal de Données** : Utilisé pour le transfert réel des fichiers (Le port utilisé pour le canal de données peut varier selon le mode de fonctionnement de `FTP` (actif ou passif))
