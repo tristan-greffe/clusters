@@ -25,7 +25,7 @@ L'objectif principal de ces infrastructures est de **transférer des information
 
 Ce modèle créé par l'[ISO](https://www.iso.org/fr/home.html) (Organisation internationale de normalisation) décrit toutes les règles pour établir une connexion entre deux systèmes informatiques.
 
-<img src="/clusters/learning/network-protocols/osi-model.png" alt="osi-model" style="width: 60%; display: block; margin: 0 auto;">
+<img src="/learning/network-protocols/osi-model.png" alt="osi-model" style="width: 60%; display: block; margin: 0 auto;">
 
 Le **modèle OSI se compose de couches** qui prennent en compte tous les aspects de la transmission d'une information.
 
