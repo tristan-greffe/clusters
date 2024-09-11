@@ -43,7 +43,7 @@ Le **modèle OSI se compose de couches** qui prennent en compte tous les aspects
 
 **Sur le réseau Internet, on utilise principalement le modèle TCP/IP** (*fun fact : il a été créé par l'armée américaine*).
 
-<img src="/clusters/learning/network-protocols/tcp-ip-model.png" alt="tcp-ip-model" style="width: 60%; display: block; margin: 0 auto;">
+<img src="/learning/network-protocols/tcp-ip-model.png" alt="tcp-ip-model" style="width: 60%; display: block; margin: 0 auto;">
 
 | Couche | Description |
 |--------|-------------|
