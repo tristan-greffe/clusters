@@ -68,7 +68,7 @@ En tant que développeur, on se concentre principalement sur les **couches trans
 
 ## Fonctionnement
 
-<img src="/clusters/learning/network-protocols/internet-operation.svg" alt="internet-operation" style="width: 80%; display: block; margin: 0 auto;">
+<img src="/learning/network-protocols/internet-operation.svg" alt="internet-operation" style="width: 80%; display: block; margin: 0 auto;">
 
  
 1. Un utilisateur **envoie une requête** à tiktok.com. **La donnée suit le protocole TCP/IP pour être transformée en bits**.
