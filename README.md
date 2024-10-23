@@ -30,7 +30,7 @@
   </h4>
 
   <a href="https://tristan-greffe.github.io/clusters/">
-    <img src="https://skillicons.dev/icons?i=docker,kubernetes,prometheus,grafana,jenkins" />
+    <img src="https://skillicons.dev/icons?i=docker,kubernetes,prometheus,grafana" />
   </a>
 </div>
 
