@@ -1,12 +1,10 @@
-name: Build & Deploy documentation
-
-on:
-  push:
-    branches:
-      - master
+name: ci
+on: [ push ]
 
 jobs:
-  build:
+  build_docs:
+    name: Build docs
+    if: ${{ startsWith(github.event.head_commit.message, 'docs:') || contains(github.event.head_commit.message, 'build doc') }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
