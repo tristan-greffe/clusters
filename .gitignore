@@ -5,15 +5,9 @@
 logs
 *.log
 
-# age keys
-keys.txt
-
-# Decrypted files
-*.dec.*
-
 # Dependency directories
 node_modules/
 
 # vitepress
-docs/.vitepress/cache
-docs/.vitepress/dist
+.vitepress/cache
+.vitepress/dist

@@ -3,8 +3,8 @@ on: [ push ]
 
 jobs:
   build_docs:
-    name: Build docs
-    if: ${{ startsWith(github.event.head_commit.message, 'docs:') || contains(github.event.head_commit.message, 'build doc') }}
+    name: Build
+    if: ${{ contains(github.event.head_commit.message, 'build') }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -14,11 +14,11 @@ jobs:
       - uses: pnpm/action-setup@v3
         with:
           version: 9
-      - name: Build docs
+      - name: Build
         run: |
-          cd docs && pnpm install && pnpm docs:build
+          pnpm install && pnpm build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./docs/.vitepress/dist
+          folder: ./.vitepress/dist
           token: ${{ secrets.TOKEN_GITHUB }}

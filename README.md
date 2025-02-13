@@ -2,9 +2,9 @@
 
 <div align="center">
 
-  ![Project Banner](./docs/public/readme_banner.png)
+  ![Project Banner](./public/readme_banner.png)
 
-  <p>Automation scripts, Helm charts & configurations for deploying and managing Kubernetes clusters efficiently.</p>
+  <p>Understand and master DevOps tools</p>
 
   <p>
     <a href="https://github.com/tristan-greffe/clusters">
@@ -21,16 +21,8 @@
     </a>
   </p>
 
- <h4>
-    <a href="https://tristan-greffe.github.io/clusters/">View Documentation</a>
-    <span> · </span>
-    <a href="https://github.com/tristan-greffe/clusters/issues/">Report Bug</a>
-    <span> · </span>
-    <a href="https://github.com/tristan-greffe/clusters/issues/">Request Feature</a>
-  </h4>
-
   <a href="https://tristan-greffe.github.io/clusters/">
-    <img src="https://skillicons.dev/icons?i=docker,kubernetes,prometheus,grafana" />
+    <img src="https://skillicons.dev/icons?i=docker,kubernetes" />
   </a>
 </div>
 

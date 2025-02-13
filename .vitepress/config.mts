@@ -21,12 +21,10 @@ export default defineConfig({
         outline: { label: 'Sur cette page' },
         nav: [
           { text: 'A propos', link: '/fr/about/introduction' },
-          { text: 'Guide', link: '/fr/guide/getting-started' },
           { text: 'Apprentissage', link: '/fr/learning/introduction' }
         ],
         sidebar: {
           '/fr/about/': getAboutSidebar('fr'),
-          '/fr/guide/': getGuideSidebar('fr'),
           '/fr/learning/': getLearningSidebar()
         },
         docFooter: {
@@ -44,12 +42,10 @@ export default defineConfig({
     ],
     nav: [
       { text: 'About', link: '/about/introduction' },
-      { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Learning', link: '/learning/introduction' }
     ],
     sidebar: {
-      '/about/': getAboutSidebar(),
-      '/guide/': getGuideSidebar()
+      '/about/': getAboutSidebar()
     },
     footer: {
       copyright: 'MIT Licensed | Copyright © 2024 Tristan Greffe'
@@ -69,29 +65,6 @@ function getAboutSidebar (lang = 'en') {
     { text: 'A propos', link: '/fr/about/introduction' },
     { text: 'Contribuer', link: '/fr/about/contributing' },
     { text: 'Licence', link: '/fr/about/license' }
-  ]
-}
-
-function getGuideSidebar (lang = 'en') {
-  if (lang === 'en') {
-    return [
-      { text: 'Getting Started', link: '/guide/getting-started' },
-      { text: 'Scripts',
-        collapsed: true,
-        items: [
-          { text: 'Encrypt / Decrypt', link: '/guide/scripts/encrypt-decrypt' }
-        ]
-      }
-    ]
-  }
-  return [
-    { text: 'Démarrer', link: '/fr/guide/getting-started' },
-    { text: 'Scripts',
-      collapsed: true,
-      items: [
-        { text: 'Chiffrer / Déchiffrer', link: '/fr/guide/scripts/encrypt-decrypt' }
-      ]
-    }
   ]
 }
 
