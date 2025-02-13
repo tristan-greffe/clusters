@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  ![Project Banner](./public/readme_banner.png)
+  ![Project Banner](./public/banner_readme.png)
 
   <p>Understand and master DevOps tools</p>
 
